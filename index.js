@@ -1,5 +1,4 @@
-const app = "I don't do much.";
-
+//request making examples:
 let xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://api.github.com/repos/jquery/jquery/commits');
 xhr.responseType = 'json';
@@ -14,7 +13,7 @@ xhr.onerror = function() {
  
 xhr.send();
 
-
+//with no token
 fetch('https://api.github.com/repos/jquery/jquery/commits')
   .then(res => res.json())
   .then(json => console.log(json));
